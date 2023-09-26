@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Management System</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <h1>Recipe Management System</h1>
+    <div class="recipe-grid">
+      <div class="recipe-grid-column">
+        <h2 class="recipe-title">Recipes</h2>
+        <div class="recipe-grid-list" id="recipeList">
+          <div class="recipe-item" id="example">
+            Filipino - Adobo - Ingredients: Soy Sauce, Water, Vinegar, Chicken
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-grid-column" id="recipeForm">
+        <h2>Add a Recipe</h2>
+        <form class="recipe-form" id="addRecipeForm">
+          <label for="recipeType">Recipe Type:</label>
+          <select class="recipe-input" id="recipeType">
+            <option value="filipino">Filipino</option>
+            <option value="american">American</option>
+            <option value="others">Others</option></select
+          ><br />
+
+          <label for="recipeName">Recipe Name:</label>
+          <input
+            class="recipe-input"
+            type="text"
+            id="recipeName"
+            required
+          /><br />
+
+          <label for="ingredients">Ingredients (comma-separated):</label>
+          <input
+            class="recipe-input"
+            type="text"
+            id="ingredients"
+            required
+          /><br />
+
+          <button class="submit-button" type="submit">Add Recipe</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
